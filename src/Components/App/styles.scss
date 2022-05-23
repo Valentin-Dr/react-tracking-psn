@@ -1,38 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: 'Rubik', sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.infos-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.infos {
+  &-main {
+    grid-row: span 2;
   }
-  to {
-    transform: rotate(360deg);
+  &-details {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: hsl(235, 46%, 20%);
   }
+  &-title {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  &-time {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin: 0;
+  }
+  &-illustration {
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    top: 30px;
+    z-index: -1;
+    overflow: hidden;
+  }
+  &-illustration-main {
+    background-color: hsl(235, 45%, 61%);
+    border-radius: 10px;
+    position: relative;
+    top: 30px;
+    padding: 25px;
+  }
+}
+
+.font-size-color-details {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: rgb(214, 214, 214);
+}
+
+.work {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.study {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.selfcare {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.student-pic {
+  width: 35%;
+  border-radius: 50%;
+  border: 3px white solid;
+}
+
+.student-name {
+  word-break: break-all;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-dots {
+  background-color:transparent;
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.change-date {
+  cursor: pointer;
+}
+
+.details-main {
+  padding-top: 52px;
 }
