@@ -24,6 +24,11 @@
     border-radius: 10px;
     padding: 20px;
     background-color: hsl(235, 46%, 20%);
+    transition: background-color 200ms;
+    cursor: pointer;
+    &:hover {
+      background-color: hsl(236, 35%, 25%);
+    }
   }
   &-title {
     font-size: 1rem;
@@ -40,7 +45,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;
-    top: 30px;
+    top: 20px;
     z-index: -1;
     overflow: hidden;
   }
@@ -48,7 +53,7 @@
     background-color: hsl(235, 45%, 61%);
     border-radius: 10px;
     position: relative;
-    top: 30px;
+    top: 20px;
     padding: 25px;
   }
 }
@@ -63,24 +68,78 @@
   background-color: hsl(15, 100%, 70%);
 }
 
+.img-work {
+  background: url("../../images/icon-work.svg");
+  width: 90px;
+  height: 79px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+}
+
 .play {
   background-color: hsl(195, 74%, 62%);
+}
+
+.img-play {
+  background: url("../../images/icon-play.svg");
+  width: 90px;
+  height: 79px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
 }
 
 .study {
   background-color: hsl(348, 100%, 68%);
 }
 
+.img-study {
+  background: url("../../images/icon-study.svg");
+  width: 90px;
+  height: 79px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+}
+
 .exercise {
   background-color: hsl(145, 58%, 55%);
+}
+
+.img-exercise {
+  background: url("../../images/icon-exercise.svg");
+  width: 90px;
+  height: 79px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
 }
 
 .social {
   background-color: hsl(264, 64%, 52%);
 }
 
+.img-social {
+  background: url("../../images/icon-social.svg");
+  width: 90px;
+  height: 79px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+}
+
 .selfcare {
   background-color: hsl(43, 84%, 65%);
+}
+
+.img-selfcare {
+  background: url("../../images/icon-self-care.svg");
+  width: 90px;
+  height: 79px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
 }
 
 .student-pic {
@@ -115,6 +174,19 @@
 
 .change-date {
   cursor: pointer;
+  width: fit-content;
+  color: hsl(235deg, 45%, 61%);
+  transition: color 200ms;
+  &:hover {
+    color: white;
+  }
+  &:focus {
+    color: white;
+  }
+}
+
+.active {
+  color: white;
 }
 
 .details-main {
