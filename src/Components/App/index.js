@@ -33,12 +33,14 @@ function App() {
             <div className={`img-${info.title.replace(' ','').toLowerCase()}`}></div>
           </div>
           <div className="infos-details">
-          <div className="flex">
+          <div className="flex-space-between">
             <h2 className="infos-title">{info.title}</h2>
             <button className="link-dots">...</button>
           </div>
-            <p className="infos-time">{info.timeframes[timeChosen].current}hrs</p>
-            <p className="font-size-color-details">{dateSentence} {info.timeframes[timeChosen].previous}hrs</p>
+            <div className="responsive-flex-align">
+              <p className="infos-time">{info.timeframes[timeChosen].current}hrs</p>
+              <p className="font-size-color-details">{dateSentence} {info.timeframes[timeChosen].previous}hrs</p>
+            </div>
           </div>
         </div>
     )
@@ -52,10 +54,12 @@ function App() {
         <div className="infos-main">
           <div className="infos-illustration-main">
             <img className="student-pic" src={jeremyImg} alt="Jeremy" />
-            <p className="font-size-color-details">
-              Report for
-            </p>
-            <h2 className="student-name">Jeremy<br/>Robson</h2>
+            <div>
+              <p className="font-size-color-details">
+                Report for
+              </p>
+              <h2 className="student-name"><span className="block">Jeremy</span> Robson</h2>
+            </div>
           </div>
           <div className="infos-details details-main">
             <p

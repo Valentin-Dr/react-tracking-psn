@@ -156,7 +156,7 @@
   margin-bottom: 50px;
 }
 
-.flex {
+.flex-space-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -191,4 +191,52 @@
 
 .details-main {
   padding-top: 52px;
+}
+
+.block {
+  display: block;
+}
+
+@media screen and (max-width:900px) {
+  .infos-grid {
+    grid-template-columns: 1fr;
+  }
+  .App {
+    height: auto;
+  }
+
+  .details-main {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .infos-illustration-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .student-pic {
+    width: 80px;
+    margin-right: 20px;
+  }
+
+  .block {
+    display: inline-block;
+  }
+
+  .student-name {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+  }
+
+  .font-size-color-details {
+    margin-top: 0px;
+  }
+
+  .responsive-flex-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
